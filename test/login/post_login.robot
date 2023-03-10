@@ -9,4 +9,16 @@ Force Tags    @regression
 Login com sucesso
     Login
     Should Be Equal As Strings    ${response.json()['message']}
+
+Login com sucesso
+    Login
+    Should Be Equal As Strings    ${response.json()['message']}
+    
+Login com sucesso
+    Login
+    Should Be Equal As Strings    ${response.json()['message']}
+    
+Login com sucesso
+    Login
+    Should Be Equal As Strings    ${response.json()['message']}
     
