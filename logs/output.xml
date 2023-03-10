@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230309 13:44:25.558" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot API" source="C:\Users\fernanda.l.abbud\Documents\Robot_API">
+<suite id="s1-s1" name="Test" source="C:\Users\fernanda.l.abbud\Documents\Robot_API\test">
+<suite id="s1-s1-s1" name="Usuarios" source="C:\Users\fernanda.l.abbud\Documents\Robot_API\test\usuarios">
+<suite id="s1-s1-s1-s1" name="Get Usuarios" source="C:\Users\fernanda.l.abbud\Documents\Robot_API\test\usuarios\get_usuarios.robot">
+<test id="s1-s1-s1-s1-t1" name="Listando todos os usuarios com sucesso" line="8">
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>${baseURL}/usuarios</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230309 13:44:26.034" level="INFO">GET Request : url=https://serverest.dev/usuarios 
+ path_url=/usuarios 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230309 13:44:26.035" level="INFO">GET Response : url=https://serverest.dev/usuarios 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '4004fb7d-82b8-4444-b394-3974e4ce75ac', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '2c4ac7f6a46d9f78c9c31559d74e5dff', 'Date': 'Thu, 09 Mar 2023 13:44:09 GMT', 'Server': 'Google Frontend', 'Content-Length': '9055'} 
+ body={
+    "quantidade": 42,
+    "usuarios": [
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "wask@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "2fCaSQmsSupKIIId"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "chqm@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "2hZ3Ye3g0zzRoqmt"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "xqww@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "5NqrdpSUjaGYOaUa"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "grjp@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "5vSWsiGyLJLQipGS"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "zmte@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "6cLLBBOmyJoIb0k7"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "dgvg@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "7rGx6eEHdBl7noxj"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "gazd@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "8dqxUUs4MZRsux2C"
+        },
+        {
+            "nome": "Nathan Anderson DVM",
+            "email": "Jo62@gmail.com",
+            "password": "teste123",
+            "administrador": "true",
+            "_id": "9RTBq2Vg0p3tQzr5"
+        },
+        {
+            "nome": "Layla Carter",
+            "email": "Jena51@yahoo.com",
+            "password": "onkWflS0sPygmHT",
+            "administrador": "false",
+            "_id": "9hPoNcEBHC8FRRWb"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "yywv@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "BnvQTPPXfhnXWN3z"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "supf@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "C3dZ8cuvIxXsWl7R"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "uari@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Dpd4HfIdcJn1MJjy"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "mngm@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "ETvvsw85F7emqO2x"
+        },
+        {
+            "nome": "Louis Jacobs I",
+            "email": "louisjacobsi@test.com",
+            "password": "Test;123",
+            "administrador": "true",
+            "_id": "FnwczprvvdZrKZjA"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "odal@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "HbIrf45MOUrrucCZ"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "LAWZs6F561QvVdQ0"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "hdrg@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "LC8huDnH91D9wOWk"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "pocc@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "MeMzFwyfQuQLs4gJ"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "lebs@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Olb8MgehcpXs49WJ"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "bisi@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "OwQkuznAdF3l7kDE"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "slgf@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Q9Gq3nqkxtgkolBB"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "hzrv@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "QpAopK0LiXIyX6OZ"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "wajm@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "RiUNxU4SrNIIlJm9"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "giec@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Si9R7HmZADLIrmIi"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "dzcs@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "XxV7pz7KxYqbP6p6"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "thck@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Z1u0VjcR8KPER3bS"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "xcxr@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "ci1SXM9ZVgLKTeUa"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "vuxu@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "d2cdasPhu2pbFuSi"
+        },
+        {
+            "nome": "Kara Conn",
+            "email": "karaconn@test.com",
+            "password": "Test;123",
+            "administrador": "true",
+            "_id": "dWRTY36ovcMZCiyJ"
+        },
+        {
+            "nome": "TesteLocust",
+            "email": "teste@teste.com",
+            "password": "teste",
+            "administrador": "false",
+            "_id": "e8yzcYxcpQxNgytk"
+        },
+        {
+            "nome": "Nicole.Harber85",
+            "email": "Toni_Huel@hotmail.com",
+            "password": "123456789",
+            "administrador": "true",
+            "_id": "joIp9Mt4JXrb2EkW"
+        },
+        {
+            "nome": "Bruce Wayne",
+            "email": "bruce@batman.com",
+            "password": "batman",
+            "administrador": "true",
+            "_id": "kFTszqDHwlPI7PUn"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "rkrg@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "nG0nBmAYMZr8ln2w"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "jibw@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "oTmAft09e1QaxEyY"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "fwkc@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "pDetCd5GXwf5irNz"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "nbbu@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "s9Y79fhr3h45X3nX"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "fwdi@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "ssuFzgaHLKAQmkMp"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "qttt@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "uocBVi1br5qt0zfW"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "wkgk@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "uwbKBVDdzbKIsQUU"
+        },
+        {
+            "nome": "Ira Labadie DVM",
+            "email": "iralabadiedvm@test.com",
+            "password": "Test;123",
+            "administrador": "true",
+            "_id": "vTg8wsda52xrWAO8"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "jwzf@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "xVOhhTZn4poSGkJu"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "vvza@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "zVzvBQ9TRCwK0kC7"
+        }
+    ]
+} 
+ </msg>
+<msg timestamp="20230309 13:44:26.035" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230309 13:44:25.760" endtime="20230309 13:44:26.035"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${qtd}</arg>
+<arg>${response.json()['quantidade']}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20230309 13:44:26.036" level="INFO">${qtd} = 42</msg>
+<status status="PASS" starttime="20230309 13:44:26.035" endtime="20230309 13:44:26.036"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.json()['quantidade']}</arg>
+<arg>${qtd}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230309 13:44:26.036" endtime="20230309 13:44:26.037"/>
+</kw>
+<tag>@regression</tag>
+<status status="PASS" starttime="20230309 13:44:25.760" endtime="20230309 13:44:26.037"/>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Listando todos os usuarios com sucesso 2" line="13">
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>${baseURL}/usuarios</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230309 13:44:26.278" level="INFO">GET Request : url=https://serverest.dev/usuarios 
+ path_url=/usuarios 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230309 13:44:26.278" level="INFO">GET Response : url=https://serverest.dev/usuarios 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': 'c7eca21b-06c6-462d-89a6-d2ec66ccd533', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '464b42c749efe8dcb2443ad6cb25a822', 'Date': 'Thu, 09 Mar 2023 13:44:10 GMT', 'Server': 'Google Frontend', 'Content-Length': '9055'} 
+ body={
+    "quantidade": 42,
+    "usuarios": [
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "wask@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "2fCaSQmsSupKIIId"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "chqm@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "2hZ3Ye3g0zzRoqmt"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "xqww@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "5NqrdpSUjaGYOaUa"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "grjp@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "5vSWsiGyLJLQipGS"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "zmte@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "6cLLBBOmyJoIb0k7"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "dgvg@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "7rGx6eEHdBl7noxj"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "gazd@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "8dqxUUs4MZRsux2C"
+        },
+        {
+            "nome": "Nathan Anderson DVM",
+            "email": "Jo62@gmail.com",
+            "password": "teste123",
+            "administrador": "true",
+            "_id": "9RTBq2Vg0p3tQzr5"
+        },
+        {
+            "nome": "Layla Carter",
+            "email": "Jena51@yahoo.com",
+            "password": "onkWflS0sPygmHT",
+            "administrador": "false",
+            "_id": "9hPoNcEBHC8FRRWb"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "yywv@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "BnvQTPPXfhnXWN3z"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "supf@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "C3dZ8cuvIxXsWl7R"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "uari@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Dpd4HfIdcJn1MJjy"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "mngm@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "ETvvsw85F7emqO2x"
+        },
+        {
+            "nome": "Louis Jacobs I",
+            "email": "louisjacobsi@test.com",
+            "password": "Test;123",
+            "administrador": "true",
+            "_id": "FnwczprvvdZrKZjA"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "odal@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "HbIrf45MOUrrucCZ"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "LAWZs6F561QvVdQ0"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "hdrg@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "LC8huDnH91D9wOWk"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "pocc@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "MeMzFwyfQuQLs4gJ"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "lebs@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Olb8MgehcpXs49WJ"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "bisi@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "OwQkuznAdF3l7kDE"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "slgf@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Q9Gq3nqkxtgkolBB"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "hzrv@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "QpAopK0LiXIyX6OZ"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "wajm@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "RiUNxU4SrNIIlJm9"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "giec@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Si9R7HmZADLIrmIi"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "dzcs@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "XxV7pz7KxYqbP6p6"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "thck@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "Z1u0VjcR8KPER3bS"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "xcxr@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "ci1SXM9ZVgLKTeUa"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "vuxu@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "d2cdasPhu2pbFuSi"
+        },
+        {
+            "nome": "Kara Conn",
+            "email": "karaconn@test.com",
+            "password": "Test;123",
+            "administrador": "true",
+            "_id": "dWRTY36ovcMZCiyJ"
+        },
+        {
+            "nome": "TesteLocust",
+            "email": "teste@teste.com",
+            "password": "teste",
+            "administrador": "false",
+            "_id": "e8yzcYxcpQxNgytk"
+        },
+        {
+            "nome": "Nicole.Harber85",
+            "email": "Toni_Huel@hotmail.com",
+            "password": "123456789",
+            "administrador": "true",
+            "_id": "joIp9Mt4JXrb2EkW"
+        },
+        {
+            "nome": "Bruce Wayne",
+            "email": "bruce@batman.com",
+            "password": "batman",
+            "administrador": "true",
+            "_id": "kFTszqDHwlPI7PUn"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "rkrg@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "nG0nBmAYMZr8ln2w"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "jibw@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "oTmAft09e1QaxEyY"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "fwkc@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "pDetCd5GXwf5irNz"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "nbbu@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "s9Y79fhr3h45X3nX"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "fwdi@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "ssuFzgaHLKAQmkMp"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "qttt@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "uocBVi1br5qt0zfW"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "wkgk@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "uwbKBVDdzbKIsQUU"
+        },
+        {
+            "nome": "Ira Labadie DVM",
+            "email": "iralabadiedvm@test.com",
+            "password": "Test;123",
+            "administrador": "true",
+            "_id": "vTg8wsda52xrWAO8"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "jwzf@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "xVOhhTZn4poSGkJu"
+        },
+        {
+            "nome": "\"Fulano da Silva\"",
+            "email": "vvza@emailteste.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "zVzvBQ9TRCwK0kC7"
+        }
+    ]
+} 
+ </msg>
+<msg timestamp="20230309 13:44:26.279" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230309 13:44:26.038" endtime="20230309 13:44:26.279"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${qtd}</arg>
+<arg>${response.json()['quantidade']}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20230309 13:44:26.280" level="INFO">${qtd} = 42</msg>
+<status status="PASS" starttime="20230309 13:44:26.279" endtime="20230309 13:44:26.280"/>
+</kw>
+<kw name="Should Not Be Equal As Strings" library="BuiltIn">
+<arg>${response.json()['quantidade']}</arg>
+<arg>10</arg>
+<doc>Fails if objects are equal after converting them to strings.</doc>
+<msg timestamp="20230309 13:44:26.281" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20230309 13:44:26.281" endtime="20230309 13:44:26.281"/>
+</kw>
+<tag>@regression</tag>
+<status status="PASS" starttime="20230309 13:44:26.038" endtime="20230309 13:44:26.281"/>
+</test>
+<test id="s1-s1-s1-s1-t3" name="Listando todos os usuarios com ID valido" line="18">
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>${baseURL}/usuarios/9RTBq2Vg0p3tQzr5</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230309 13:44:26.521" level="INFO">GET Request : url=https://serverest.dev/usuarios/9RTBq2Vg0p3tQzr5 
+ path_url=/usuarios/9RTBq2Vg0p3tQzr5 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230309 13:44:26.521" level="INFO">GET Response : url=https://serverest.dev/usuarios/9RTBq2Vg0p3tQzr5 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': 'e8eecc12-f6f1-4972-9657-f583336f6784', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '73476574cb85638ea4fea49607a79dcb', 'Date': 'Thu, 09 Mar 2023 13:44:10 GMT', 'Server': 'Google Frontend', 'Content-Length': '156'} 
+ body={
+    "nome": "Nathan Anderson DVM",
+    "email": "Jo62@gmail.com",
+    "password": "teste123",
+    "administrador": "true",
+    "_id": "9RTBq2Vg0p3tQzr5"
+} 
+ </msg>
+<msg timestamp="20230309 13:44:26.522" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230309 13:44:26.282" endtime="20230309 13:44:26.522"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.json()['nome']}</arg>
+<arg>Nathan Anderson DVM</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230309 13:44:26.522" endtime="20230309 13:44:26.522"/>
+</kw>
+<tag>@regression</tag>
+<tag>@test</tag>
+<status status="PASS" starttime="20230309 13:44:26.282" endtime="20230309 13:44:26.522"/>
+</test>
+<test id="s1-s1-s1-s1-t4" name="Listando todos os usuarios com ID invalido" line="23">
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>${baseURL}/usuarios/noID</arg>
+<arg>expected_status=400</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230309 13:44:26.754" level="INFO">GET Request : url=https://serverest.dev/usuarios/noID 
+ path_url=/usuarios/noID 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230309 13:44:26.754" level="INFO">GET Response : url=https://serverest.dev/usuarios/noID 
+ status=400, reason=Bad Request 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '61b3d5f2-e8dc-40e3-ab98-7717b1c8f0d1', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '54ea74b861b524ec1a1e2b85590d07c2', 'Date': 'Thu, 09 Mar 2023 13:44:10 GMT', 'Server': 'Google Frontend', 'Content-Length': '45'} 
+ body={
+    "message": "Usuário não encontrado"
+} 
+ </msg>
+<msg timestamp="20230309 13:44:26.754" level="INFO">${response} = &lt;Response [400]&gt;</msg>
+<status status="PASS" starttime="20230309 13:44:26.524" endtime="20230309 13:44:26.754"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.json()['message']}</arg>
+<arg>Usuário não encontrado</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230309 13:44:26.754" endtime="20230309 13:44:26.755"/>
+</kw>
+<tag>@regression</tag>
+<tag>@test</tag>
+<status status="PASS" starttime="20230309 13:44:26.523" endtime="20230309 13:44:26.755"/>
+</test>
+<test id="s1-s1-s1-s1-t5" name="Listando todos os usuarios por ID via Query com sucesso" line="28">
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>${baseURL}/usuarios</arg>
+<arg>expected_status=200</arg>
+<arg>params=_id=9RTBq2Vg0p3tQzr5</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230309 13:44:27.003" level="INFO">GET Request : url=https://serverest.dev/usuarios?_id=9RTBq2Vg0p3tQzr5 
+ path_url=/usuarios?_id=9RTBq2Vg0p3tQzr5 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230309 13:44:27.003" level="INFO">GET Response : url=https://serverest.dev/usuarios?_id=9RTBq2Vg0p3tQzr5 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': 'c6b0dc2c-c952-4733-8296-cb25607815ad', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '926fcb34a2f33f77d5a86fe8e7053f8a', 'Date': 'Thu, 09 Mar 2023 13:44:10 GMT', 'Server': 'Google Frontend', 'Content-Length': '261'} 
+ body={
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Nathan Anderson DVM",
+            "email": "Jo62@gmail.com",
+            "password": "teste123",
+            "administrador": "true",
+            "_id": "9RTBq2Vg0p3tQzr5"
+        }
+    ]
+} 
+ </msg>
+<msg timestamp="20230309 13:44:27.003" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230309 13:44:26.756" endtime="20230309 13:44:27.003"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.json()['usuarios'][0]['nome']}</arg>
+<arg>Nathan Anderson DVM</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230309 13:44:27.004" endtime="20230309 13:44:27.005"/>
+</kw>
+<tag>@regression</tag>
+<tag>@test</tag>
+<status status="PASS" starttime="20230309 13:44:26.756" endtime="20230309 13:44:27.006"/>
+</test>
+<test id="s1-s1-s1-s1-t6" name="Listando todos os usuarios por ID e nome via Query sem sucesso" line="34">
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>${baseURL}/usuarios</arg>
+<arg>expected_status=200</arg>
+<arg>params=_id=9RTBq2Vg0p3tQzr5</arg>
+<arg>params=nome=esse nome nao existe</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230309 13:44:27.242" level="INFO">GET Request : url=https://serverest.dev/usuarios?nome=esse%20nome%20nao%20existe 
+ path_url=/usuarios?nome=esse%20nome%20nao%20existe 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230309 13:44:27.242" level="INFO">GET Response : url=https://serverest.dev/usuarios?nome=esse%20nome%20nao%20existe 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '0cb2e009-d1bc-4eca-bfc6-d91018458661', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '21d6a3a38a1a27cf1289563348d3f4b9;o=1', 'Date': 'Thu, 09 Mar 2023 13:44:11 GMT', 'Server': 'Google Frontend', 'Content-Length': '43'} 
+ body={
+    "quantidade": 0,
+    "usuarios": []
+} 
+ </msg>
+<msg timestamp="20230309 13:44:27.243" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230309 13:44:27.007" endtime="20230309 13:44:27.243"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.json()['quantidade']}</arg>
+<arg>1</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20230309 13:44:27.244" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<msg timestamp="20230309 13:44:27.244" level="FAIL">0 != 1</msg>
+<status status="FAIL" starttime="20230309 13:44:27.244" endtime="20230309 13:44:27.244"/>
+</kw>
+<tag>@regression</tag>
+<tag>@test</tag>
+<status status="FAIL" starttime="20230309 13:44:27.007" endtime="20230309 13:44:27.245">0 != 1</status>
+</test>
+<status status="FAIL" starttime="20230309 13:44:25.617" endtime="20230309 13:44:27.247"/>
+</suite>
+<status status="FAIL" starttime="20230309 13:44:25.606" endtime="20230309 13:44:27.248"/>
+</suite>
+<status status="FAIL" starttime="20230309 13:44:25.598" endtime="20230309 13:44:27.249"/>
+</suite>
+<status status="FAIL" starttime="20230309 13:44:25.571" endtime="20230309 13:44:27.250"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="5" fail="1" skip="0">@regression</stat>
+<stat pass="3" fail="1" skip="0">@test</stat>
+</tag>
+<suite>
+<stat pass="5" fail="1" skip="0" id="s1" name="Robot API">Robot API</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1" name="Test">Robot API.Test</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1-s1" name="Usuarios">Robot API.Test.Usuarios</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1-s1-s1" name="Get Usuarios">Robot API.Test.Usuarios.Get Usuarios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
